@@ -1,0 +1,10 @@
+.DS_Store
+nlp-lang.iml
+target/
+.idea/
+out/
+.classpath
+.project
+.settings/
+bin/
+
