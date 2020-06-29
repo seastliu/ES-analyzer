@@ -1,0 +1,13 @@
+grant {
+  // needed because of the hot reload functionality
+  permission java.net.SocketPermission "*", "connect,resolve";
+
+  // jdbc driver
+  permission java.lang.RuntimePermission "*", "connect,resolve";
+
+  // druid datasource read properties
+  permission java.util.PropertyPermission "*", "read,write";
+  permission javax.management.MBeanTrustPermission "register";
+  permission javax.management.MBeanServerPermission "createMBeanServer";
+  permission javax.management.MBeanPermission "*", "*";
+};
