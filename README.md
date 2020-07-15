@@ -98,7 +98,7 @@ es setting配置
 es mapping配置
 {
   "properties": {
-	"stockName": {
+	"title": {
 	  "type": "text",
 	  "fields": {
 		"pinyin": {
