@@ -1,11 +1,26 @@
 # ES-analyzer
-
+ik_dynamic_update和synonym_dynamic_update支持通过Mysql进行配置，使用前需要在配置文件中进行DB连接配置
 ## ik_dynamic_update
 支持通过MySQL配置IK扩展词、停用词热更新
 
-
 ## synonym_dynamic_update
 支持通过MySQL配置SYNONYM同义词热更新
+
+```
+# 是否打开数据库同义词库(true/false)
+enable.synonym=true
+url=
+user=
+password=
+
+# 用户可以在这里配置MySQL同义词表名
+synonym.table=dynamic_synonym_rule
+# 用户可以在这里配置MySQL同义词表字段名称
+synonym.field.name=word
+
+# DB自定义词库同步内存刷新时间（单位秒）
+refresh.time.interval=1800
+```
 
 ```
 es setting配置
