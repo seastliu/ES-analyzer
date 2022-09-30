@@ -1,5 +1,5 @@
 # ES-analyzer
-ik_dynamic_update和synonym_dynamic_update支持通过Mysql进行配置，使用前需要在配置文件中进行DB连接配置
+ik_dynamic_update和synonym_dynamic_update支持通过Mysql进行动态配置，使用前需要在配置文件中进行DB连接配置
 ## ik_dynamic_update
 支持通过MySQL配置IK扩展词、停用词热更新
 
