@@ -1,7 +1,7 @@
 IK Analysis for Elasticsearch
 =============================
 
-因涉及到ES连接MySQL，故需要在ES所在机器上添加DB访问权限，相关配置如下：
+因为涉及到ES连接MySQL，故需要在ES所在机器上添加DB访问权限，相关配置如下：
 ${JAVA_HOME}/jre/lib/security下java.policy添加一下配置
 permission java.net.SocketPermission "*", "connect,resolve";
 //mysql-connector-java-8需要添加如下配置
